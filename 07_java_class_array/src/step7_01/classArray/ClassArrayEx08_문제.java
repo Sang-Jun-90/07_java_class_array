@@ -49,6 +49,11 @@ public class ClassArrayEx08_문제 {
 			}
 			else if (choice == 2) {
 				
+				for (int i = 0; i < stdCnt; i++) System.out.println("[i+1] "+stdList[stdCnt].name);
+				
+				System.out.print("학생 선택 : ");
+				int input = scan.nextInt();
+				
 				
 				
 			}
