@@ -7,96 +7,96 @@ import java.io.FileWriter;
 import java.util.Scanner;
 import java.util.ArrayList;
 
-//class StudentVO{
-//	
-//	String id = "";
-//	String pw = "";
-//	
-//	void set_data(String id , String  pw) {
-//		this.id = id; 
-//		this.pw = pw;
-//	}
-//	
-//	
-//	void print_data() {
-//		System.out.println("이름 : " + id + " 비밀번호 : " + pw);
-//	}
-//	
-//}
-//
-//
-//class StudentManager{
-//	
-//	ArrayList<StudentVO> studentList = new ArrayList<StudentVO>();
-//	
-//	void add_student(StudentVO st) {
-//		studentList.add(st);
-//	}
-//	
-//	
-//	StudentVO remove_student(int index) {
-//		StudentVO del_st = studentList.get(index);
-//		studentList.remove(index);
-//		return del_st;
-//	}
-//	
-//	
-//	int check_id(StudentVO st) {
-//		int check = -1;
-//		for (int i = 0; i < studentList.size(); i++) {
-//			if (studentList.get(i).id.equals(st.id)) {
-//				check = i;
-//				break;
-//			}
-//		}
-//		return check;
-//	}
-//	
-//	
-//	void print_student() {
-//		for (int i = 0; i < studentList.size() ;i++) {
-//			studentList.get(i).print_data();
-//		}
-//	}	
-//	
-//	
-//	String out_data() {
-//		String data = "";
-//		int count = studentList.size();
-//		if (count == 0){
-//			return data;
-//		}
-//		data += count;
-//		data += "\n";
-//		for (int i = 0; i < count; i++) {
-//			data += studentList.get(i).id;
-//			data += ",";
-//			data += studentList.get(i).pw;
-//			if (count - 1 != i) {
-//				data += "\n";
-//			}
-//		}
-//		return data;
-//	}
-//	
-//	
-//	void sort_data() {
-//		/*
-//              직접 구현해보세요.
-//        */
-//	}
-//	
-//	
-//	void load_student(ArrayList<StudentVO> temp ) {
-//		studentList = temp;
-//	}	
-//	
-//	
-//	int get_size() {
-//		return studentList.size();
-//	}
-//	
-//}
+class StudentVO{
+	
+	String id = "";
+	String pw = "";
+	
+	void set_data(String id , String  pw) {
+		this.id = id; 
+		this.pw = pw;
+	}
+	
+	
+	void print_data() {
+		System.out.println("이름 : " + id + " 비밀번호 : " + pw);
+	}
+	
+}
+
+
+class StudentManager{
+	
+	ArrayList<StudentVO> studentList = new ArrayList<StudentVO>();
+	
+	void add_student(StudentVO st) {
+		studentList.add(st);
+	}
+	
+	
+	StudentVO remove_student(int index) {
+		StudentVO del_st = studentList.get(index);
+		studentList.remove(index);
+		return del_st;
+	}
+	
+	
+	int check_id(StudentVO st) {
+		int check = -1;
+		for (int i = 0; i < studentList.size(); i++) {
+			if (studentList.get(i).id.equals(st.id)) {
+				check = i;
+				break;
+			}
+		}
+		return check;
+	}
+	
+	
+	void print_student() {
+		for (int i = 0; i < studentList.size() ;i++) {
+			studentList.get(i).print_data();
+		}
+	}	
+	
+	
+	String out_data() {
+		String data = "";
+		int count = studentList.size();
+		if (count == 0){
+			return data;
+		}
+		data += count;
+		data += "\n";
+		for (int i = 0; i < count; i++) {
+			data += studentList.get(i).id;
+			data += ",";
+			data += studentList.get(i).pw;
+			if (count - 1 != i) {
+				data += "\n";
+			}
+		}
+		return data;
+	}
+	
+	
+	void sort_data() {
+		/*
+              직접 구현해보세요.
+        */
+	}
+	
+	
+	void load_student(ArrayList<StudentVO> temp ) {
+		studentList = temp;
+	}	
+	
+	
+	int get_size() {
+		return studentList.size();
+	}
+	
+}
 
 public class ClassArrayEx23_정답 {
 
