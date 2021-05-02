@@ -30,13 +30,19 @@ import java.util.Arrays;
  *   ArrayList list = new ArrayList();                      // JDK 1.4 이전
  *   ArrayList<Integer> list = new ArrayList<Integer>();    // JDK 1.5 이후
  *   ArrayList<Integer> list = new ArrayList<>();           // JDK 1.7 이후 
- * 
+ * 	 
  *  [ 제네릭 ]
  * - 제네릭(generic)이라 부르며 ArrayList에 저장될 데이터 타입을
  *   반드시 클래스로 작성한다.
  * - 기본 자료형 데이터를 저장하는 ArrayList를 만들어야 하는 경우에는
  *   래퍼 클래스를 사용한다.
  *   
+ *   ArrayList이름.add(변수)   -    ArrayList에 추가(맨뒤)
+ *   ArrayList이름.size()    -    ArrayList의 배열의 크기 반환
+ *   ArrayList이름.set(index,value) - ArrayList의 index번째의 값을 value값으로 수정한다.
+ *   ArrayList이름.remove(index) - ArrayList의 index번째 위치의 값을 삭제한다.
+ *   ArrayList이름.get(index) - ArrayList의 index번째의 value를 얻어온다. 
+ *   ArrayList이름.clear() - ArrayList의 모든 데이터를 제거한다.
  */
 
 

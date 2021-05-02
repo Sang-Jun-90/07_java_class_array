@@ -14,7 +14,7 @@ class Fruit2 {
 	String name;
 	int price;
 	
-	// 기본 생성자
+	// Fruit2 기본 생성자
 	Fruit2(){
 		
 	}
@@ -30,6 +30,10 @@ class Fruit2 {
 		this.price = price;
 	}
 	
+	void returnFruit() {
+		System.out.println(name +" : " + price);
+	}
+	
 }
 
 
@@ -38,8 +42,13 @@ public class ClassArrayEx16 {
 	public static void main(String[] args) {
 
 		new Fruit2();
-		new Fruit2("사과");
-		new Fruit2("운악산 포도", 50000);
+		Fruit2 apple = new Fruit2("사과");
+		Fruit2 grape = new Fruit2("운악산 포도", 50000);
+		
+		
+		System.out.println(apple.name);
+		apple.returnFruit();
+		grape.returnFruit();
 		
 	}
 

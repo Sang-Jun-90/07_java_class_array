@@ -72,7 +72,7 @@ public class ClassArrayEx21_문제 {
 	public static void main(String[] args) {
 		
 		// ArrayList 사용
-		ArrayList<Tv> list = new ArrayList<>();
+		ArrayList<Tv> list = new ArrayList<>();  // 클래스 배열
 
 		Tv temp = new Tv("TV", "삼성", 1000);
 		list.add(temp);
@@ -95,13 +95,13 @@ public class ClassArrayEx21_문제 {
 
 		// 직접 구현한 ArrayList 사용
 		TvList myList = new TvList();
-		temp = new Tv("TV", "삼성", 1000);
+		temp = new Tv("TV", "삼성", 10000);
 		myList.add(temp);
 
-		temp = new Tv("시그니처TV", "엘지", 2000);
+		temp = new Tv("시그니처TV", "엘지", 20000);
 		myList.add(temp);
 
-		temp = new Tv("스마트TV", "애플", 3000);
+		temp = new Tv("스마트TV", "애플", 30000);
 		myList.add(temp);
 
 		for (Tv tv : myList.arr) {

@@ -7,6 +7,13 @@ import java.util.HashMap;
 	 # HashMap
 	 
 	- HashMap은 K(Key)에 V(Value)를 할당하는 방식으로 데이터가 저장된다.
+	
+	HashMap이름.put(key,value) : HashMap에 데이터를 추가한다.
+	HashMap이름.size() : HashMap의 데이터 개수를 반환한다.
+	HashMap이름.get(key) : HashMap의 key에 할당된 value를 얻어온다.
+	HashMap이름.keySet() : HashMap의 key만 얻어온다.(역순으로)
+	HashMap이름.remove(key) : HashMap의 key에 해당되는 값을 제거한다.
+	HashMap이름.clear() : HashMap의 모든 값을 제거한다.
 
 */
 
@@ -36,7 +43,7 @@ public class ClassArrayEx20 {
 		System.out.println(hmap.get("data1"));
 		System.out.println(hmap.get("data2"));
 		System.out.println(hmap.get("data3"));
-		System.out.println("======================");
+		System.out.println("======================keySet");
 		
 		// keySet() : HashMap의 key만 얻어온다.
 		System.out.println(hmap.keySet());
