@@ -27,7 +27,7 @@ public class ClassArrayEx17 {
 
 		PrivateTest obj = new PrivateTest();
 		
-		//obj.a = 100; 접근불가(is not visible)
+		//obj.a = 100; 접근불가(is not visible) > private이기 때문에
 		obj.b = 200;
 		obj.c = 300;
 		System.out.println(obj.b);

@@ -13,6 +13,8 @@ class MySingleTon {
 		return instance;
 	}
 	
+	
+	
 	void method1() {System.out.println("#메서드1");}
 	void method2() {System.out.println("#메서드2");}
 	void method3() {System.out.println("#메서드3");}
