@@ -28,6 +28,7 @@ public class ClassArrayEx01 {
 		
 		
 		// 엘리먼트 조회
+		// 엘리먼트(요소)란 클래스 안에 있는 요소들을 말한다.
 		
 		for (int i = 0; i < productList.length; i++) {
 			System.out.println(productList[i].name);

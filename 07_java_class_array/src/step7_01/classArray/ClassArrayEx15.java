@@ -8,10 +8,13 @@ class Fruit {
 	
 	String name;
 	int price;
+	static int num;
 	
 	Fruit(String name , int price) {
 		this.name  = name;
 		this.price = price;
+		num++;
+		System.out.println("[" + num + "]");
 	}
 	
 	void printData() {

@@ -8,7 +8,7 @@ class MySingleTon {
 	private MySingleTon() {}
 	// 2. 내부에서 static 으로 자기자신의 인스턴스를 생성한다.
 	private static MySingleTon instance = new MySingleTon();
-	// 3. instance 를 반환할 better를 만들어준다.
+	// 3. instance 를 반환할 getter를 만들어준다.
 	public static MySingleTon getInstance() {
 		return instance;
 	}

@@ -15,8 +15,10 @@ class Horse{
 class Racing{
 	Random ran = new Random();
 	int size = 4;
-	Horse[] horses = new Horse[size];	
 	int line = 20;
+	
+	Horse[] horses = new Horse[size];	
+	 
 	int track [][] = new int[size][line];
 	
 	void run() {
@@ -25,17 +27,69 @@ class Racing{
 			horses[i] = new Horse();
 		}
 		horses[0].name = "a";
+		horses[1].name = "b";
+		horses[2].name = "c";
+		horses[3].name = "d";
+		
+		play();
+		printHorse();
+	}
+	void printHorse() {
+		System.out.println();
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < line; j++) {
+				if(horses[i].pos == j) System.out.print("[" + horses[i].name + "]");
+				else System.out.print("[ ]");
+			}
+			System.out.println();
+		}
+	}
+	void play() {
+		boolean isRunning = true;
+		int finishCount = 0;
+		
+		while(isRunning) {
+			printHorse();
+			
+			for (int i = 0; i < size; i++) {
+				if(horses[i].isWin == true) continue;
+				
+				int r  = ran.nextInt(4) + 1;
+				horses[i].pos += r;
+				
+				if(horses[i].pos >= 19) {
+					horses[i].pos = 19;
+					horses[i].rank = finishCount +1;
+					horses[i].isWin = true;
+					finishCount++;
+					
+					if(finishCount >= size) {
+						isRunning = false;
+						break;
+					}
+					
+				}
+				
+			}
+			try {
+				Thread.sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 		
 	}
 }
-
-
 
 
 public class ClassArrayEx10_정답 {
 
 	public static void main(String[] args) {
 
+		
+		new Racing().run();
+		
 	}
 
 }
